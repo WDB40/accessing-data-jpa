@@ -54,6 +54,14 @@ public class Application {
                         log.info(bauer.toString());
                     });
 
+            log.info("Trying out adding a findByFirstName");
+            log.info("Customers found with findByFirstName('Wes')");
+            log.info("-------------------------------------------");
+            customerRepository.findByFirstName("Wes")
+                    .forEach(wes-> {
+                        log.info(wes.toString());
+                    });
+
             /*
             for (Customer bauer : repository.findByLastName("Bauer")) {
                 log.info(bauer.toString());
