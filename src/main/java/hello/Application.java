@@ -48,7 +48,7 @@ public class Application {
 
             //Fetch customers by last name
             log.info("Customers found with findByLastName('Bauer'):");
-            log.info("---------------------------------------------");\
+            log.info("---------------------------------------------");
             customerRepository.findByLastName("Bauer")
                     .forEach(bauer-> {
                         log.info(bauer.toString());
